@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ff5a5f;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adicionado para centralizar botões verticalmente */
+    height: calc(100vh - 120px);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 75px; /* Diminuí o tamanho pela metade */
+    height: 75px; /* Diminuí o tamanho pela metade */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ff5a5f;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #888;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 15px 30px; /* Aumentei o tamanho do padding */
+    border: none;
+    border-radius: 30px; /* Aumentei o raio da borda */
+    background-color: #ff5a5f;
+    color: white;
+    font-size: 1.2rem; /* Aumentei o tamanho da fonte */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #ff4247;
+}
+
+footer {
+    background-color: pink;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+    <center>
+    <header>
+        <h1>Tinder do Pudas
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Mensagens</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <img src="assets/img/image0.jpg" alt="Profile Image">
+            <hr><hr>
+            <h2>Lucas do Grau</h2>
+            
+            <p>18 Anos | Xique-Xique Bahia</p>
+            <hr><hr>
+            <button class="like-btn">Like</button>
+            <button class="dislike-btn">Dislike</button>
+            <hr><hr>
+        </div>
+        <!-- Outros perfis -->
+        <button id="change-bg-btn">Alterar Cor de Fundo</button>
+    </main>
+    <footer>
+        <center>
+            <a href="index.html">Voltar para o Inferno</a>
+        </center>
+        <p>&copy; 2024 Tinder Clone</p>
+    </footer>
+    <script src="script.js"></script>
+</center>
+</body>
+</html>
